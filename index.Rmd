@@ -1,25 +1,65 @@
 ---
-title: "index"
+title: "Intro to Data Programming"
 ---
 
 
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+This is an introductory class to data programming using the R language.
 
-```{r cars}
-summary(cars)
+[Lecture 01](Lecture_01-00-Introduction_to_R.html)
+
+
+
+
+```{r, echo=F}
+
+# devtools::install_github("garthtarr/pairsD3")
+
+data(iris)
+require(pairsD3)
+pairsD3(iris[,1:4],group=iris[,5])
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+
+```{r, echo=F}
+
+library( networkD3 )
+
+URL <- paste0(
+        "https://cdn.rawgit.com/christophergandrud/networkD3/",
+        "master/JSONdata/energy.json")
+Energy <- jsonlite::fromJSON(URL)
+# Plot
+sankeyNetwork(Links = Energy$links, Nodes = Energy$nodes, Source = "source",
+             Target = "target", Value = "value", NodeID = "name",
+             units = "TWh", fontSize = 12, nodeWidth = 30)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r, echo=F}
+
+# devtools::install_github("timelyportfolio/sunburstR")
+
+library(sunburstR)
+
+# read in sample visit-sequences.csv data provided in source
+#   https://gist.github.com/kerryrodden/7090426#file-visit-sequences-csv
+sequence_data <- read.csv(
+  paste0(
+    "https://gist.githubusercontent.com/kerryrodden/7090426/"
+    ,"raw/ad00fcf422541f19b70af5a8a4c5e1460254e6be/visit-sequences.csv"
+  )
+  ,header=F
+  ,stringsAsFactors = FALSE
+)
+
+sunburst(sequence_data)
+
+
+```
+
