@@ -5,15 +5,52 @@ title: "Intro to Data Programming"
 
 
 
-
+  
 This is an introductory class to data programming using the R language.
 
-[Lecture 01](Lecture_01-00-Introduction_to_R.html)
+
+
+### [Lecture 01](Lecture_01-00-Introduction_to_R.html): Getting Started
+
+> Some text describing the contents of the chapter.
+
+
+
+### [Lecture 02](Lecture_02-00_Data_Structures.html): Data Structures
+
+> Some text describing the contents of the chapter.
+
+
+
+### [Lecture 03](Lecture_01-00-Introduction_to_R.html): Importing Data
+
+> Some text describing the contents of the chapter.
+
+
+
+### [Lecture 04](Lecture_02-00_Data_Structures.html): Combining Datasets
+
+> Some text describing the contents of the chapter.
 
 
 
 
-```{r, echo=F}
+<br>
+<br>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+```{r, echo=F, message=F, fig.width=4, fig.align='center'}
 
 # devtools::install_github("garthtarr/pairsD3")
 
@@ -24,8 +61,14 @@ pairsD3(iris[,1:4],group=iris[,5])
 
 
 
+  
+  
+  
+  
+  
 
-```{r, echo=F}
+
+```{r, echo=F, fig.width=4, fig.align='center'}
 
 library( networkD3 )
 
@@ -41,7 +84,18 @@ sankeyNetwork(Links = Energy$links, Nodes = Energy$nodes, Source = "source",
 
 
 
-```{r, echo=F}
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+```{r, echo=F, fig.width=4, fig.align='center'}
 
 # devtools::install_github("timelyportfolio/sunburstR")
 
@@ -63,3 +117,10 @@ sunburst(sequence_data)
 
 ```
 
+
+
+  
+  
+  
+  
+  

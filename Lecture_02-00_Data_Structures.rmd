@@ -1,8 +1,10 @@
 ---
-title: "Lecture 02 - Data Structures"
-author: "Lecy"
-date: "Monday, September 07, 2015"
-output: pdf_document
+title: "Data Structures"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
 ---
 
 
@@ -380,10 +382,12 @@ In this example, there are 37 teams in the Lahman dataset (some of them defunct)
 
 ```{r}
 
+library( Lahman )
+data( Salaries )
 # there are only 16 teams in the NL in 2002
 
-sals.2002 <- Salaries [Salaries$yearID=="2002", ]
-nl.sals <- sals.2002 [ sals.2002$lgID == "NL",]
+sals.2002 <- Salaries[ Salaries$yearID=="2002", ]
+nl.sals <- sals.2002[ sals.2002$lgID == "NL", ]
 levels( nl.sals$teamID )
 
 ```
