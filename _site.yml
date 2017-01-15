@@ -9,7 +9,7 @@ navbar:
       href: about.html
 output:
   html_document:
-    theme: united
+    theme: simplex
     highlight: textmate
     include:
       after_body: footer.html
