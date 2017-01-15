@@ -19,4 +19,6 @@ output:
     highlight: textmate
     include:
       after_body: footer.html
-css: style.css
+  fig_width: 6.0
+  fig_height: 3.5
+  fig_align: center
