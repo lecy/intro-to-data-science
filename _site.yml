@@ -13,3 +13,4 @@ output:
     highlight: textmate
     include:
       after_body: footer.html
+css: style.css
