@@ -4,45 +4,43 @@ title: "Intro to Data Programming"
 
 
 
-
+<br><br/>
   
 This is an introductory class to data programming using the R language.
+
+<br><br/>
+
 
 
 
 ### [Lecture 01](Lecture_01-00-Introduction_to_R.html): Getting Started
 
-> Some text describing the contents of the chapter.
+Some text describing the contents of the chapter.  
 
 
 
 ### [Lecture 02](Lecture_02-00_Data_Structures.html): Data Structures
 
-> Some text describing the contents of the chapter.
+Some text describing the contents of the chapter.  
 
 
 
 ### [Lecture 03](Lecture_01-00-Introduction_to_R.html): Importing Data
 
-> Some text describing the contents of the chapter.
+Some text describing the contents of the chapter.  
 
 
 
 ### [Lecture 04](Lecture_02-00_Data_Structures.html): Combining Datasets
 
-> Some text describing the contents of the chapter.
+Some text describing the contents of the chapter.  
 
 
 
 
-<br>
-<br>
 
-  
-  
-  
-  
-  
+<br><br/>
+<br><br/>
   
   
   

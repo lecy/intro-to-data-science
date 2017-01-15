@@ -32,3 +32,51 @@ title: "html_scratchpad"
 
 https://startbootstrap.com/template-categories/one-page/
 
+
+
+# Buttons
+
+
+<!--html_preserve-->
+
+<div id="homeContent">
+  <div class="band full blue first rightText">
+        </div>
+        <div class="actions">
+          <div><a href="lesson-1.html"><button class="bigButton getStarted">Get Started</button></a></div>
+          <div><a href="gallery.html"><button class="bigButton gallery">See Gallery</button></a></div>
+        </div>
+        </div>
+</div>
+
+<!--/html_preserve-->
+
+
+
+In the CSS:
+
+
+.bigButton {
+  padding: 20px 40px;
+  font-size: 20px;
+  border: none;
+
+  border-radius: 5px;
+
+  margin: 5px;
+}
+
+.bigButton.gallery {
+  color: #fff;
+  background-color: #8cb06c;
+}
+
+.bigButton.getStarted {
+  color: #fff;
+  background-color: #75aadb;
+}
+
+
+# Nice Layout
+
+http://www.htmlwidgets.org/
